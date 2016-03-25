@@ -2,6 +2,7 @@
 ProbablyEngine.rotation.register(251, {
 
   -- Survival
+  {{
   { "/use 13", "player.lastcast(Pillar of Frost)" },
   { "Death Siphon", {
 			"player.health <= 60",
@@ -11,6 +12,7 @@ ProbablyEngine.rotation.register(251, {
   { "Icebound Fortitude", "player.health <= 45" },
   { "Anti-Magic Shell", "player.health <= 45" },
   { "Lichborne", "player.health < 50" },
+  }, "toggle.cooldowns"},
 
   -- Interrupts
   { "Mind Freeze", {"modifier.interrupts", "target.casting.percent >= 60" } },
